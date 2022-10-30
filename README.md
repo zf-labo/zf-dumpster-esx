@@ -1,6 +1,9 @@
 # ZF LABO - Dumpster Diving
 ZF Dumpster Diving is a new synced dumpster diving resource with a lot of configurations for more pleasure and an easier configuration.
 
+### Discord
+For suggestions and support, don't forget to join our discord. **https://discord.gg/wp3SqwRUmH**
+
 ### Installation
 - Download ZIP
 - Drag and drop resource in your server
