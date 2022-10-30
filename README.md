@@ -9,10 +9,10 @@ ZF Dumpster Diving is a new synced dumpster diving resource with a lot of config
 - Restart the server
 
 ### Dependencies:
-es_extended (required) [https://github.com/esx-framework/esx-legacy]
-ox_target (required) [https://github.com/overextended/ox_target]
-ox_lib >= v2.14.0 (required) [https://github.com/overextended/ox_lib]
+- es_extended [https://github.com/esx-framework/esx-legacy]
+- ox_target [https://github.com/overextended/ox_target]
+- ox_lib >= v2.14.0 [https://github.com/overextended/ox_lib]
 
 ### Optional Dependencies:
-linden_outlawalert (optional) [https://github.com/thelindat/linden_outlawalert]
-memorygame (optional) [https://github.com/pushkart2/memorygame]
+- linden_outlawalert [https://github.com/thelindat/linden_outlawalert]
+- memorygame [https://github.com/pushkart2/memorygame]
