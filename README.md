@@ -9,10 +9,10 @@ ZF Dumpster Diving is a new synced dumpster diving resource with a lot of config
 - Restart the server
 
 ### Dependencies:
-- [qb-core](https://github.com/qbcore-framework/qb-core)
-- [qb-target](https://github.com/qbcore-framework/qb-target)
+es_extended (required) [https://github.com/esx-framework/esx-legacy]
+ox_target (required) [https://github.com/overextended/ox_target]
+ox_lib >= v2.14.0 (required) [https://github.com/overextended/ox_lib]
 
 ### Optional Dependencies:
-- [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
-- [memorygame](https://github.com/pushkart2/memorygame)
-- [qb-lock](https://github.com/YishengCheww/qb-lock)
+linden_outlawalert (optional) [https://github.com/thelindat/linden_outlawalert]
+memorygame (optional) [https://github.com/pushkart2/memorygame]
