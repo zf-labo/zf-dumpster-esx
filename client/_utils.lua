@@ -52,20 +52,40 @@ end
 
 function ProgressBar(ent)
     local progress = false
-    progress = lib.progressCircle({
-        duration = Config.ProgressTime * 1000,
-        position = 'bottom',
-        label = _U('progress_diving'),
-        useWhileDead = false,
-        canCancel = true,
-        disable = {
-            car = true,
-        },
-        anim = {
-            dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@',
-            clip = 'machinic_loop_mechandplayer' 
-        }
-    })
+    
+    if Config.ProgressType == 'circle' then
+        progress = lib.progressCircle({
+            duration = Config.ProgressTime * 1000,
+            position = 'bottom',
+            label = _U('progress_diving'),
+            useWhileDead = false,
+            canCancel = true,
+            disable = {
+                car = true,
+            },
+            anim = {
+                dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@',
+                clip = 'machinic_loop_mechandplayer' 
+            }
+        })
+    elseif Config.ProgressType == 'regular' then
+        progress = lib.progressBar({
+            duration = Config.ProgressTime * 1000,
+            position = 'bottom',
+            label = _U('progress_diving'),
+            useWhileDead = false,
+            canCancel = true,
+            disable = {
+                car = true,
+            },
+            anim = {
+                dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@',
+                clip = 'machinic_loop_mechandplayer' 
+            }
+        })
+    else
+        print('[zf-dumpster] Invalid Config.ProgressType argument')
+    end
     
     if progress then
         if not NetworkGetEntityIsNetworked(ent) then NetworkRegisterEntityAsNetworked(ent) end

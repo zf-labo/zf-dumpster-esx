@@ -11,6 +11,9 @@ Config.Props = {
     `prop_snow_dumpster_01`
 }
 
+-- ## Compatiblity Configs
+Config.Target = 'ox_target' -- Available options: 'ox_target', 'qtarget'
+Config.ProgressType = 'circle' -- Available options: 'circle', 'regular'
 
 -- ## Reset Configs
 Config.ResetOnReboot = false
