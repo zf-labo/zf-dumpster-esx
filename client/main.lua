@@ -32,7 +32,7 @@ CreateThread(function()
             }
         })
     elseif Config.Target == 'qtarget' then
-        exports.qtarget:addModel(Config.Props, {
+        exports.qtarget:AddTargetModel(Config.Props, {
             options = {
                 {
                     label = _U('target_label'),
