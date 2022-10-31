@@ -14,7 +14,7 @@ elseif Config.Minigame == 'ox_lib' then
         local success = lib.skillCheck({'easy', 'easy', 'medium'})
         return success or false
     end
-elseif Config.Minigame ~= 'none' then
+elseif Config.Minigame and Config.Minigame ~= 'none' then
     print('[zf-dumpster] Invalid minigame specified in config.lua')
 end
 
