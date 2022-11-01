@@ -2,11 +2,18 @@ isBusy = false
 
 if Config.Minigame == 'memorygame' then
     function MiniGame()
+        local success = false
+        local holdResult = true
+        
         exports['memorygame']:thermiteminigame(5, 3, 3, 15, function()
-            return true
+            success = true
+            holdResult = false
         end, function()
-            return false
+            success = false
+            holdResult = false
         end)
+
+        while holdResult do Wait(100)end
         return false
     end
 elseif Config.Minigame == 'ox_lib' then
