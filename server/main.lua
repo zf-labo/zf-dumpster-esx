@@ -72,6 +72,7 @@ function DropItem(finished, netId, playerId)
         end
         return pGive(playerId, itemTable, 10000)
     else
+        local lootChance = math.random(1,100)
         local item = Config.Loottable[math.random(1, #Config.Loottable)]
         if lootChance >= item.chances then
             return pGive(playerId, item.item, math.random(item.min, item.max))
