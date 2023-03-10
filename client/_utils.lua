@@ -99,6 +99,7 @@ function ProgressBar(ent)
         TriggerServerEvent('zf-dumpster:server:SetEntity', ObjToNet(ent), progress)
         if not Config.ResetOnReboot then TriggerServerEvent('zf-dumpster:server:ResetEntity', ObjToNet(ent)) end
         isBusy = false
+        HurtPlayer(false)
         ClearPedTasks(PlayerPedId())
     else
         isBusy = false
